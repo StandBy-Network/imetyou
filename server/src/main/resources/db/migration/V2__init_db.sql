@@ -41,7 +41,7 @@ CREATE TABLE imetyou.md_attachment (
 	store_file_name      varchar(255)   ,
 	store_file_size      numeric   ,
 	uploader_sys_username varchar(255)   ,
-	bump_user_id         text   ,
+	user_id              text   ,
 	verified10           inet   ,
 	CONSTRAINT pk__template_id_4 PRIMARY KEY ( id )
  );
@@ -78,7 +78,7 @@ COMMENT ON COLUMN imetyou.md_attachment.store_file_size IS 'A feltöltött fájl
 
 COMMENT ON COLUMN imetyou.md_attachment.uploader_sys_username IS 'A fájl feltöltőjének felhasználóneve.\n#{"fieldLabel":"A fájl feltöltőjének felhasználóneve:", "fieldI18n": "field.vpcSysAttachment.uploaderUsername", "groupId": "", "showOnForm" : "true"}#';
 
-COMMENT ON COLUMN imetyou.md_attachment.bump_user_id IS 'A csatolmány tulajdonosának azonosítója';
+COMMENT ON COLUMN imetyou.md_attachment.user_id IS 'A csatolmány tulajdonosának azonosítója';
 
 COMMENT ON COLUMN imetyou.md_attachment.verified10 IS 'A dokumentum ellenőrzött-e';
 
@@ -261,16 +261,16 @@ CREATE TABLE imetyou.sys_user (
 	user_location_lat    numeric   ,
 	user_location_lon    numeric   ,
 	CONSTRAINT pk__template_id_0 PRIMARY KEY ( id ),
-	CONSTRAINT idx_bump_user_email UNIQUE ( user_email ) 
+	CONSTRAINT idx_user_email UNIQUE ( user_email ) 
  );
 
-COMMENT ON TABLE imetyou.sys_user IS 'A bump felhasználók tárolására szolgál. Nem tesz különbséget a felhasználó típusa között a gyorsabb kiszolgálás érdekében.\nA felhasználó típusa a user_type menőben kerül meghatározásra.';
+COMMENT ON TABLE imetyou.sys_user IS 'A felhasználók tárolására szolgál. Nem tesz különbséget a felhasználó típusa között a gyorsabb kiszolgálás érdekében.\nA felhasználó típusa a user_type menőben kerül meghatározásra.';
 
 COMMENT ON COLUMN imetyou.sys_user.id IS 'Azonosító\nA felhasználó e-mail címéből képzett url és file safe base64 string';
 
 COMMENT ON COLUMN imetyou.sys_user.created IS 'Létrehozás dátuma';
 
-COMMENT ON COLUMN imetyou.sys_user.creator IS 'Rekord létrehozójának id-ja. Ez bump_user id lesz';
+COMMENT ON COLUMN imetyou.sys_user.creator IS 'Rekord létrehozójának id-ja. Ez user id lesz';
 
 COMMENT ON COLUMN imetyou.sys_user.modified IS 'Rekord utolsó módosításának időpontja.';
 

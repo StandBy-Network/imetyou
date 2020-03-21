@@ -28,7 +28,7 @@
 	</filter-mapping>
 
 	<listener>
-		<listener-class>hu.bump.word.listener.StartupListener</listener-class>
+		<listener-class>i.met.you.listener.StartupListener</listener-class>
 	</listener>
 
 	<filter>

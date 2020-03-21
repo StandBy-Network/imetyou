@@ -117,24 +117,7 @@ public class ApplicationDataSource {
 
 	public static void main(String[] args) {
 		try {
-			ApplicationDataSource dataSource = ApplicationDataSource.getInstance();
-			BasicDataSource bds = dataSource.getBasicDataSource();
-			Connection conn = bds.getConnection();
-			logger.debug("Creating statement.");
-			Statement stmt = conn.createStatement();
-			logger.debug("Executing statement.");
-			ResultSet rset = stmt.executeQuery("select * from BUMP.bump_user");
-			logger.debug("Results:");
-			// int numcols = rset.getMetaData().getColumnCount();
-
-			/*
-			 * while (rset.next()) { for (int i = 1; i <= numcols; i++) {
-			 * System.out.print("\t" + rset.getString(i)); } logger.debug(""); }
-			 */
-			rset.close();
-			stmt.close();
-			conn.close();
-			System.out.println(conn.isClosed());
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
