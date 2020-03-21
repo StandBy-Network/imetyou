@@ -18,7 +18,7 @@
 
 
 		<!-- Apache commons -->
-		<commons-fileupload.version>1.3</commons-fileupload.version>
+		<commons-fileupload.version>1.4</commons-fileupload.version>
 		<commons-dbcp.version>1.4</commons-dbcp.version>
 		<commons.codec.version>1.9</commons.codec.version>
 		<!-- Log -->
