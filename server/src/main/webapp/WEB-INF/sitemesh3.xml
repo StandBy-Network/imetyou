@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemesh>
+	<mapping path="/*" decorator="/WEB-INF/layout/mobile/mobile.jsp" />
+	<mapping path="/login.html" decorator="/WEB-INF/layout/mobile/mobile.jsp" />
+	<mapping path="/admin/login.html" decorator="/WEB-INF/layout/admin/adminLogin.jsp" />
+	<mapping path="/admin/*" decorator="/WEB-INF/layout/admin/admin.jsp" />
+	<mapping path="/landscape/*" decorator="/WEB-INF/layout/landscape/landscape.jsp" />
+	
+	
+	 <!-- Exclude path from decoration. -->
+	  <mapping path="/*ajax=true*" exclue="true"/>
+	  <mapping path="/scripts/*" exclue="true"/>
+	  <mapping path="/resources/*" exclue="true"/>
+	  <mapping path="/rest/*" exclue="true"/>
+	  <mapping path="/js/*" exclue="true"/>
+	  <mapping path="/css/*" exclue="true"/>
+	  <mapping path="/scss/*" exclue="true"/>
+	  <mapping path="/fonts/*" exclue="true"/>
+	  <mapping path="*.json" exclue="true"/>
+	  <mapping path="/*.pdf" exclue="true"/>
+	  <mapping path="/services*" exclue="true"/>
+	  <mapping path="/partials/*" exclue="true"/>
+	  
+	 
+	  
+		
+</sitemesh>
+
