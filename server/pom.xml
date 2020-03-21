@@ -28,7 +28,7 @@
 		<!-- XML -->
 		<javax.xml.bind.version>2.1</javax.xml.bind.version>
 		<!-- JSON -->
-		<com.fasterxml.jackson.core.version>2.6.4</com.fasterxml.jackson.core.version>
+		<com.fasterxml.jackson.core.version>2.9.10.3</com.fasterxml.jackson.core.version>
 		<jackson.version>1.9.13</jackson.version>
 		<!-- e-mail -->
 		<javax.mail.version>1.4.7</javax.mail.version>
