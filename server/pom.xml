@@ -16,7 +16,7 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 
-
+		<cxf.version>3.3.5</cxf.version>
 		<!-- Apache commons -->
 		<commons-fileupload.version>1.4</commons-fileupload.version>
 		<commons-dbcp.version>1.4</commons-dbcp.version>
@@ -179,6 +179,16 @@
 			<groupId>com.microsoft.sqlserver</groupId>
 			<artifactId>mssql-jdbc</artifactId>
 			<version>7.4.1.jre8</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-frontend-jaxws</artifactId>
+			<version>${cxf.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-transports-http</artifactId>
+			<version>${cxf.version}</version>
 		</dependency>
 		<!-- Servlet, JSP and others -->
 		<dependency>

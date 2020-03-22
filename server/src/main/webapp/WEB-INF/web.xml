@@ -44,6 +44,16 @@
 		<dispatcher>INCLUDE</dispatcher>
 		<dispatcher>ERROR</dispatcher>
 	</filter-mapping>
+	
+	<servlet>
+		<display-name>SimpleCXFNonSpringServlet</display-name>
+		<servlet-name>SimpleCXFNonSpringServlet</servlet-name>
+		<servlet-class>i.met.you.servlet.SimpleCXFNonSpringServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SimpleCXFNonSpringServlet</servlet-name>
+		<url-pattern>/services/*</url-pattern>
+	</servlet-mapping>
 
 
 
