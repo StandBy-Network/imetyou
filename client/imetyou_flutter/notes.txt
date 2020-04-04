@@ -1,0 +1,6 @@
+
+generate code:
+flutter pub run build_runner build
+
+generate splash
+flutter pub pub run flutter_native_splash:create
