@@ -1,18 +1,16 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'setting_bean.dart';
+part of 'application_settings.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-SettingBean _$SettingBeanFromJson(Map<String, dynamic> json) {
-  return SettingBean(
-    json['name'] as String,
-  );
+ApplicationSetting _$ApplicationSettingFromJson(Map<String, dynamic> json) {
+  return ApplicationSetting()..name = json['name'] as String;
 }
 
-Map<String, dynamic> _$SettingBeanToJson(SettingBean instance) =>
+Map<String, dynamic> _$ApplicationSettingToJson(ApplicationSetting instance) =>
     <String, dynamic>{
       'name': instance.name,
     };

@@ -4,3 +4,7 @@ flutter pub run build_runner build
 
 generate splash
 flutter pub pub run flutter_native_splash:create
+
+https://medium.com/flutter-community/using-sqlite-in-flutter-187c1a82e8b
+
+ -f <your config file name here>flutter pub run flutter_launcher_icons:main

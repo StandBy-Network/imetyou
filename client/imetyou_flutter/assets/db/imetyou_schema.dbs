@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="imetyou" id="Project_5c83c5b" template="Default" database="Sqlite" >
+	<schema name="Default" schemaname="Default" >
+		<table name="_template" >
+			<comment><![CDATA[template table]]></comment>
+			<column name="id" type="integer" jt="4" mandatory="y" >
+				<comment><![CDATA[mmm]]></comment>
+			</column>
+			<index name="Pk__template_id" unique="PRIMARY_KEY" >
+				<column name="id" />
+			</index>
+		</table>
+	</schema>
+	<connector name="imetyou" database="Sqlite" driver_class="org.sqlite.JDBC" driver_jar="sqlite-jdbc-3.27.2.1.jar" driver_desc="Standard" host="localhost" port="7210" instance="C:/dev/workspaces/ImetYou_ws/imetyou/client/imetyou_flutter/assets/db/imetyou" />
+	<layout name="Default Layout" id="Layout_32eb4b6" show_relation="columns" >
+		<entity schema="Default" name="_template" color="C1D8EE" x="384" y="112" />
+		<callout x="48" y="48" pointer="Round" >
+			<comment><![CDATA[Create new tables from the right-click pop-up, new foreign keys by drag and drop of one column over the Pk column.
+For a better understanding of the schema create multiple layouts (diagrams) with the same or different tables.]]></comment>
+		</callout>
+		<script name="SQL_Editor" id="Editor_4c0767d" language="SQL" >
+			<string><![CDATA[CREATE TABLE _template ( 
+	id                   integer NOT NULL  PRIMARY KEY  
+ );
+]]></string>
+		</script>
+		<script name="SQL_Editor_001" id="Editor_26182e" language="SQL" >
+			<string><![CDATA[CREATE TABLE _template ( 
+	id                   integer NOT NULL  PRIMARY KEY  
+ );
+]]></string>
+		</script>
+		<script name="SQL_Editor_002" id="Editor_45f0aa8" language="SQL" >
+			<string><![CDATA[CREATE TABLE _template ( 
+	id                   integer NOT NULL  PRIMARY KEY  
+ );
+]]></string>
+		</script>
+	</layout>
+</project>
