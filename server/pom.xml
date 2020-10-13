@@ -24,7 +24,7 @@
 		<!-- Log -->
 		<log4j.version>2.6.1</log4j.version>
 		<!-- TEST -->
-		<junit.version>4.10</junit.version>
+		<junit.version>4.13.1</junit.version>
 		<!-- XML -->
 		<javax.xml.bind.version>2.1</javax.xml.bind.version>
 		<!-- JSON -->
