@@ -22,7 +22,7 @@
 		<commons-dbcp.version>1.4</commons-dbcp.version>
 		<commons.codec.version>1.9</commons.codec.version>
 		<!-- Log -->
-		<log4j.version>2.6.1</log4j.version>
+		<log4j.version>2.15.0</log4j.version>
 		<!-- TEST -->
 		<junit.version>4.10</junit.version>
 		<!-- XML -->
